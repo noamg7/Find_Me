@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app ="ngFind">
 <head>
   <meta charset="UTF-8">
   <title>Find Me</title>
   <link rel="stylesheet" href="/main.css">
 </head>
 <body>
+<div ng-controller="controller">
+<pre ng-bind="wikiData | json"></pre>
+{{name}}
+{{img}}
+{{occupation}}
+{{born}}
+{{died}}
 
+</div>
+<script src='/app.js'></script>
 </body>
 </html>
