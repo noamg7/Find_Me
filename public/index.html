@@ -8,11 +8,18 @@
 <body>
 <div ng-controller="controller">
 <pre ng-bind="wikiData | json"></pre>
-{{name}}
-{{img}}
-{{occupation}}
-{{born}}
-{{died}}
+<form ng-submit="displayTodo()">
+  <input type="text" class="form-control" name="Somebody">
+  <button type="btn btn-primary" ng-click="displayTodo(todo)">Search</button>
+</form>
+<ul>
+  <li>Name: {{name}}</li>
+  <li>{{img}}</li>
+  <li>{{occupation}}</li>
+  <li>{{born}}</li>
+  <li>{{died}}</li>
+</ul>
+
 
 </div>
 <script src='/app.js'></script>
