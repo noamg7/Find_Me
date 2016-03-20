@@ -4,11 +4,12 @@ angular.module('ngFind', [])
     .then(function(data){
         $scope.query.title = "title";
     })
-//.config(['$httpProvider', function($httpProvider) {
-  // $http({
-  //   url: "https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json",
-  //   method: 'json'
-  // });
+
+// .config(['$httpProvider', function($httpProvider) {
+//   $http({
+//     url: "https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content&format=json",
+//     method: 'json'
+//   });
 });
 
 // app.use(function(req, res, next){
