@@ -1,9 +1,13 @@
 angular.module('ngFind', [])
 .controller('findMeCtrl', function($scope, $http){
-  $http.get("https://en.wikipedia.org/w/api.php?action=query&titles=Main%20Page&prop=revisions&rvprop=content")
-    .then(function(data){
-        $scope.query.title = "title";
+  $scope.query = 'cheese';
+  $http.jsonp("https://en.wikipedia.org/w/api.php?action=query&titles="+$scope.query+"&prop=revisions&rvprop=content&format=json&callback=JSON_CALLBACK")
+    .then(function(response){
+        console.log(response);
     })
+
+
+
 
 // .config(['$httpProvider', function($httpProvider) {
 //   $http({
