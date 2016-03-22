@@ -9,16 +9,16 @@
 <body>
 <div ng-controller="findMeCtrl">
 <pre ng-bind="wikiData | json"></pre>
-<form ng-submit="displayTodo()">
+<form ng-submit="displayTodo(data)">
   <input type="text" class="form-control" name="Somebody">
-  <button type="btn btn-primary" ng-click="wikiTodo()">Search</button>
+  <button type="btn btn-primary" ng-click="wikiTodo(data)">Search</button>
 </form>
 <ul>
   <li>Name: {{title}}</li>
   <!-- <li>{{img}}</li>
-  <li>{{occupation}}</li>
-  <li>{{born}}</li>
-  <li>{{died}}</li> -->
+  <li>Occupation: {{Occupation}}</li>
+  <li>Date of Birth: {{Birth}}</li>
+  <li>Death: {{Death}}</li> -->
 </ul>
 
 
