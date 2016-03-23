@@ -13,15 +13,7 @@
   <input type="text" class="form-control" name="Somebody">
   <button type="btn btn-primary" ng-click="wikiTodo(data)">Search</button>
 </form>
-<ul>
-  <li>Name: {{title}}</li>
-  <!-- <li>{{img}}</li>
-  <li>Occupation: {{Occupation}}</li>
-  <li>Date of Birth: {{Birth}}</li>
-  <li>Death: {{Death}}</li> -->
-</ul>
-
-
+<pre>{{data | json}}</pre>
 </div>
 <script src='app.js'></script>
 </body>
