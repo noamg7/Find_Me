@@ -6,9 +6,11 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body ng-controller="MainController">
+  <center><h1>Welcome to Wiki Data</h1></center>
+  <center><p id='warning'>WARNING, this page will not help you find everything you are looking for, therefore, do not use it for research purposes!!!</p></center>
   <form>
-    <input type="text" class="form-control" ng-model="search.name">
-    <button type="button" ng-click="wikiTodo()">Search</button>
+  <center><input type="text" class="form-control" ng-model="search.name">
+    <button type="button" ng-click="wikiTodo()">Search</button></center>
   </form>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
   <div id='wiki'>
@@ -16,6 +18,7 @@
       <pre ng-bind="wikiData | json"></pre>
   </div>
   </div>
+  <center><p>Thank you Wikipedia</p></center>
 <script src='app.js'></script>
 </body>
 </html>
