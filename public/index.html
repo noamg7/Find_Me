@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="ngFind">
+<html lang="en" ng-app="myApp">
 <head>
   <meta charset="UTF-8">
-  <title>Find Me</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
-  <link rel="stylesheet" href="/main.css">
+  <title>FindMe</title>
+  <link rel="stylesheet" href="main.css">
 </head>
-<body>
-<div ng-controller="findMeCtrl">
-<pre ng-bind="wikiData | json"></pre>
-<form ng-submit="displayTodo(data)">
-  <input type="text" class="form-control" name="Somebody">
-  <button type="btn btn-primary" ng-click="wikiTodo(data)">Search</button>
-</form>
-<pre>{{data | json}}</pre>
-</div>
+<body ng-controller="MainController">
+  <form>
+    <input type="text" class="form-control" ng-model="search.name">
+    <button type="button" ng-click="wikiTodo()">Search</button>
+  </form>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <div id='wiki'>
+  <div>
+      <pre ng-bind="wikiData | json"></pre>
+  </div>
+  </div>
 <script src='app.js'></script>
 </body>
 </html>
